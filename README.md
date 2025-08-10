@@ -1,70 +1,63 @@
-# Desafío Literatura con Spring Boot
+# Desafío Literatura
 
-Este proyecto consume datos de la API Gutendex, guarda libros y autores en una base de datos PostgreSQL y ofrece un menú interactivo para consultar la información.
+Proyecto para manejar libros y autores con diferentes funcionalidades.
 
 ---
 
 ## Menú principal
 
-Cada opción del menú corresponde a funcionalidades que puedes usar en la consola.
+=== MENÚ PRINCIPAL ===  
+1 - Buscar libro por título  
+![Buscar libro por título](src/main/resources/images/menu1-1.png)  
+2 - Lista de libros registrados  
+![Lista de libros registrados](src/main/resources/images/menu2-1.png)  
+3 - Lista de autores registrados  
+![Lista de autores registrados](src/main/resources/images/menu3-1.png)  
+4 - Lista de autores vivos en determinado año  
+![Autores vivos en determinado año](src/main/resources/images/menu4-1.png)  
+5 - Lista de libros por idioma  
+![Lista de libros por idioma](src/main/resources/images/menu5-1.png)  
 
-### Opciones:
-
-1. **Buscar libro por título**  
-   ![Buscar libro](images/menu1-1.png)  
-   Al ingresar el título, busca en la API, verifica que no esté repetido y guarda el libro con sus autores.
-
-2. **Lista de libros registrados**  
-   ![Lista libros](images/menu2-1.png)  
-   Muestra todos los libros que ya tienes guardados en la base de datos.
-
-3. **Lista de autores registrados**  
-   ![Lista autores](images/menu3-1.png)  
-   Lista todos los autores registrados, mostrando nombre, fechas y sus libros.
-
-4. **Lista de autores vivos en determinado año**  
-   ![Autores vivos](images/menu4-1.png)  
-   Permite filtrar autores que estuvieron vivos en un año específico.
-
-5. **Lista de libros por idioma**  
-   ![Libros por idioma](images/menu5-1.png)  
-   Muestra los libros filtrados por idioma (ejemplo: en, es, fr).
-
-0. **Salir**  
-   ![Salir](images/menu0-1.png)  
-   Salir de la aplicación.
+0 - Salir
 
 ---
 
-## Estructura de carpetas relevantes
+## Descripción de funcionalidades
 
-- `src/main/java/...`  
-  Código fuente Java con modelos, repositorios y servicios.
+1. **Buscar libro por título**  
+Busca un libro por su título usando una API externa y guarda la información si no existe.
 
-- `src/main/resources/images/`  
-  Aquí están las imágenes usadas para ilustrar el README.
+2. **Lista de libros registrados**  
+Muestra todos los libros guardados en la base de datos.
+
+3. **Lista de autores registrados**  
+Muestra todos los autores registrados con sus libros.
+
+4. **Lista de autores vivos en determinado año**  
+Filtra y muestra los autores que estaban vivos en un año dado.
+
+5. **Lista de libros por idioma**  
+Muestra los libros registrados filtrados por idioma.
 
 ---
 
 ## Cómo ejecutar
 
-1. Configura tu base de datos PostgreSQL y los datos en `application.properties`.  
-2. Corre la aplicación Spring Boot (`DesafioLiteraturaApplication.java`).  
-3. Usa el menú en consola para interactuar.
+1. Clona el repositorio.  
+2. Compila y corre la aplicación.  
+3. Usa el menú para navegar y probar las opciones.
 
 ---
 
-## Capturas de ejemplo
+## Imágenes de cada menú
 
-_(Incluye aquí alguna captura general si deseas, o más imágenes de las funciones)_
-
----
-
-## Contacto
-
-Alan Sandoval  
-[GitHub](https://github.com/AlanSAndovalLoZA)  
+![Buscar libro por título](src/main/resources/images/menu1-1.png)  
+![Lista de libros registrados](src/main/resources/images/menu2-1.png)  
+![Lista de autores registrados](src/main/resources/images/menu3-1.png)  
+![Autores vivos en determinado año](src/main/resources/images/menu4-1.png)  
+![Lista de libros por idioma](src/main/resources/images/menu5-1.png)  
 
 ---
 
-¡Gracias por usar este proyecto!  
+*Este proyecto fue desarrollado por Alan Sandoval.*
+
