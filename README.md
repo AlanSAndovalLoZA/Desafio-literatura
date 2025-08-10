@@ -20,14 +20,18 @@ Proyecto para manejar libros y autores con diferentes funcionalidades.
 ![Buscar libro por título](src/main/resources/images/menu1-1.png)  
 ![Buscar libro por título](src/main/resources/images/menu1-2.png)
 ![Buscar libro por título](src/main/resources/images/menu1-3.png)
+
 2 - Lista de libros registrados  
 ![Lista de libros registrados](src/main/resources/images/menu2-1.png)  
 ![Lista de libros registrados](src/main/resources/images/menu2-2.png) 
+
 3 - Lista de autores registrados  
 ![Lista de autores registrados](src/main/resources/images/menu3-1.png) 
 ![Lista de autores registrados](src/main/resources/images/menu3-2.png)  
+
 4 - Lista de autores vivos en determinado año  
 ![Autores vivos en determinado año](src/main/resources/images/menu4-1.png)  
+
 5 - Lista de libros por idioma  
 ![Lista de libros por idioma](src/main/resources/images/menu5-1.png)  
 ![Lista de libros por idioma](src/main/resources/images/menu5-2.png) 
