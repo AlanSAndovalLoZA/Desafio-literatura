@@ -80,6 +80,12 @@ public class Principal {
         String nombre = item.get("title").asText();
         String idioma = item.get("languages").get(0).asText();
 
+        // Extraemos el total de descargas
+        int totalDescargas = 0;
+        if (item.has("download_count") && !item.get("download_count").isNull()) {
+            totalDescargas = item.get("download_count").asInt();
+        }
+
         List<Autor> autores = new ArrayList<>();
         item.get("authors").forEach(a -> {
             String nom = a.get("name").asText();
@@ -94,7 +100,9 @@ public class Principal {
         });
 
         Libro libro = new Libro(nombre, idioma, autores);
+        libro.setTotalDescargas(totalDescargas);  // Asignar total de descargas
         libroRepo.save(libro);
+
         System.out.println("Libro guardado:\n" + libro);
     }
 
